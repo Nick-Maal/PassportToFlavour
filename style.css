@@ -1,0 +1,240 @@
+/*----------------------------          
+
+Nom : Nicolas Maalouly
+Numéro D'Étudiant : 300272916            
+            
+----------------------------*/
+
+                /* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #fafafa; 
+    color: #333; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+                /* Header Styles */
+header {
+    background-color: #ff7043; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.bg-orange {
+    background-color: #ffc2b0;  
+}
+
+
+                /* Navbar Styles */
+.navbar {
+    background-color: #aa4d30;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .nav-link {
+    color: white;
+}
+
+.navbar .nav-link:hover {
+    color: #ffd180;  
+}
+
+                /* Section Styles */
+section {
+    padding: 50px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+                /* About Section */
+#about {
+    background-color: #ffffff; 
+}
+
+#about:hover {
+    background-color: #ffe0b2; 
+}
+
+#about img {
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+#about img:hover {
+    transform: scale(1.05);
+}
+
+
+                /* Food Section */
+#food {
+    background-color: #fffbe9;  
+}
+
+#food:hover {
+    background-color: #ffe0b2;  
+}
+
+#food .col-md-4 {
+    margin-bottom: 30px;
+    text-align: center;  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#food .col-md-4:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+                /* Experts Section */
+#chefs {
+    background-color: #ffffff;  
+}
+
+#chefs:hover {
+    background-color: #ffe0b2;  
+}
+
+#experts img {
+    transition: transform 0.3s ease;
+}
+
+#experts img:hover {
+    transform: scale(1.05);
+}
+
+.expert-card {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.expert-card:hover {
+    transform: scale(1.05);
+}
+
+                /* Services Section */
+#services {
+    background-color: #fffbe9;  
+}
+
+#services:hover {
+    background-color: #ffe0b2;  
+}
+
+#services .col-md-4 {
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#services .col-md-4:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-bubble {
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+                /* Ateliers */
+#ateliers {
+    background-color: #ffffff;  
+}
+
+#ateliers:hover {
+    background-color: #ffe0b2;      
+}
+
+#ateliers img {
+    transition: transform 0.3s ease;
+}
+
+#ateliers img:hover {
+    transform: scale(1.05);
+}
+
+.ateliers-card {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.ateliers-card:hover {
+    transform: scale(1.05);
+}
+
+
+                /* Booking Section */
+#booking {
+    background-color: #ffecb3;  
+}
+
+#booking:hover {
+    background-color: #ffe082;  
+}
+
+#booking label {
+    font-weight: bold;
+    color: #ff7043;
+}
+
+#booking button {
+    background-color: #ff7043;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#booking button:hover {
+    background-color: #e64a19;  
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+                /* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;  
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);  
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+                /* Footer Styles */
+footer {
+    background-color: #ff7043;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,114 @@
+<!----------------------------          
+
+Nom : Nicolas Maalouly
+Numéro D'Étudiant : 300272916            
+            
+---------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier Details - Passport to Flavor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="container-fluid bg-orange text-white py-3">
+        <h1 class="text-center display-4">Passport to Flavor</h1> 
+        <p class="text-center lead">Crafting Culinary Adventures for Your Special Events</p>
+    </header>
+
+    <main>
+        <section id="atelier-details" class="container py-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="" alt="" id="atelierImage" class="img-fluid rounded"> 
+                </div>
+                <div class="col-md-6">
+                    <h2 id="atelierName"></h2>
+                    <p id="atelierDescription"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const atelier = urlParams.get('atelier');
+
+            function updateatelierDetails(atelierDetails) {
+                document.getElementById('atelierName').innerText = atelierDetails.name;
+                document.getElementById('atelierDescription').innerText = atelierDetails.description;
+                document.getElementById('atelierImage').src = atelierDetails.imageURL;
+            }
+
+            if (atelier === 'Ball_Room') {
+                const atelierDetails = {
+                    name: 'Ball Room',
+                    description: 'Ballrooms offer ample space and elegant ambiance, ideal for large gatherings and formal events. Their adaptable layouts can accommodate various seating arrangements and entertainment options, while built-in features like sound systems and lighting simplify setup for caterers.',
+                    imageURL: 'Pictures/ball_room.jpeg' 
+                };
+                updateatelierDetails(atelierDetails);
+
+            } else if (atelier === 'restaurant') {
+                const atelierDetails = {
+                    name: 'Restaurant',
+                    description: 'Offers a wide range of prepared food and drinks, often with a specific cuisine or theme.',
+                    imageURL: 'Pictures/restaurant.jpeg' 
+                };
+                updateatelierDetails(atelierDetails);
+
+            } else if (atelier === 'bar') {
+                const atelierDetails = {
+                    name: 'Bar',
+                    description: 'Primarily serves alcoholic beverages, sometimes accompanied by light snacks or live music.',
+                    imageURL: 'Pictures/bar.jpeg' 
+                };
+                updateatelierDetails(atelierDetails);
+
+            } else if (atelier === 'cafe') {
+                const atelierDetails = {
+                    name: 'Cafe',
+                    description: 'Casual establishment focused on coffee, tea, and pastries, often with a relaxed atmosphere.',
+                    imageURL: 'Pictures/cafe.jpeg' 
+                };
+                updateatelierDetails(atelierDetails);
+
+            } else if (atelier === 'hotel') {
+                const atelierDetails = {
+                    name: 'Hotel',
+                    description: 'Provides lodging, often with additional amenities like restaurants, bars, and pools.',
+                    imageURL: 'Pictures/hotel.jpeg' 
+                };
+                updateatelierDetails(atelierDetails);
+
+            } else if (atelier === 'theater') {
+                const atelierDetails = {
+                    name: 'Theater',
+                    description: 'Venue for live performances, such as plays, musicals, concerts, or stand-up comedy.',
+                    imageURL: 'Pictures/theater.jpeg' 
+                };
+                updateatelierDetails(atelierDetails);
+
+            }
+    
+    <footer class="container-fluid bg-orange text-white py-3 text-center">
+        <p>&copy; 2024 Passport to Flavor</p>
+    </footer>
+
+    }
+
+    </script>
+
+</body>
+</html>
+
