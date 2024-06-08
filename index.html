@@ -115,7 +115,7 @@ Numéro D'Étudiant : 300272916
 
 
 
-                                <!--       chefs       -->
+                                <!--       Chefs       -->
 
         <section id="chefs" class="container py-5">
             <h2 class="text-center mb-4">Meet Our Chefs</h2>
@@ -398,7 +398,6 @@ Numéro D'Étudiant : 300272916
                             <!--       BOOKING FUNCTION     -->
         <script>
             function proceedToStep2() {
-                // Form Validation
                 let isValid = true;
                 const chef = document.getElementById("chef").value;
                 const service = document.getElementById("service").value;
@@ -411,7 +410,6 @@ Numéro D'Étudiant : 300272916
                     isValid = false;
                 }
     
-                // Show Step 2 if Step 1 is valid
                 if (isValid) {
                     document.getElementById("step1").style.display = "none";
                     document.getElementById("step2").style.display = "block";
@@ -419,7 +417,6 @@ Numéro D'Étudiant : 300272916
             }
 
             function submitBookingForm() {
-                // Form Validation
                 let isValid = true;
                 const name = document.getElementById("name").value;
                 const email = document.getElementById("email").value;
@@ -432,7 +429,6 @@ Numéro D'Étudiant : 300272916
                     isValid = false;
                 }
 
-                // Data Transfer (Using URL parameters for simplicity)
                 if (isValid) {
                     const chef = document.getElementById("chef").value;
                     const service = document.getElementById("service").value;

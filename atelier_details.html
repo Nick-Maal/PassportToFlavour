@@ -1,8 +1,8 @@
-<!----------------------------          
+<!----------------------------
 
 Nom : Nicolas Maalouly
-Numéro D'Étudiant : 300272916            
-            
+Numéro D'Étudiant : 300272916
+
 ---------------------------->
 
 <!DOCTYPE html>
@@ -18,7 +18,7 @@ Numéro D'Étudiant : 300272916
 </head>
 
 <body>
-
+                <!--    HEADER   -->    
     <header class="container-fluid bg-orange text-white py-3">
         <h1 class="text-center display-4">Passport to Flavor</h1> 
         <p class="text-center lead">Crafting Culinary Adventures for Your Special Events</p>
@@ -45,7 +45,7 @@ Numéro D'Étudiant : 300272916
             const urlParams = new URLSearchParams(window.location.search);
             const atelier = urlParams.get('atelier');
 
-            function updateatelierDetails(atelierDetails) {
+            function updateAtelierDetails(atelierDetails) {
                 document.getElementById('atelierName').innerText = atelierDetails.name;
                 document.getElementById('atelierDescription').innerText = atelierDetails.description;
                 document.getElementById('atelierImage').src = atelierDetails.imageURL;
@@ -57,7 +57,7 @@ Numéro D'Étudiant : 300272916
                     description: 'Ballrooms offer ample space and elegant ambiance, ideal for large gatherings and formal events. Their adaptable layouts can accommodate various seating arrangements and entertainment options, while built-in features like sound systems and lighting simplify setup for caterers.',
                     imageURL: 'Pictures/ball_room.jpeg' 
                 };
-                updateatelierDetails(atelierDetails);
+                updateAtelierDetails(atelierDetails);
 
             } else if (atelier === 'restaurant') {
                 const atelierDetails = {
@@ -65,7 +65,7 @@ Numéro D'Étudiant : 300272916
                     description: 'Offers a wide range of prepared food and drinks, often with a specific cuisine or theme.',
                     imageURL: 'Pictures/restaurant.jpeg' 
                 };
-                updateatelierDetails(atelierDetails);
+                updateAtelierDetails(atelierDetails);
 
             } else if (atelier === 'bar') {
                 const atelierDetails = {
@@ -73,7 +73,7 @@ Numéro D'Étudiant : 300272916
                     description: 'Primarily serves alcoholic beverages, sometimes accompanied by light snacks or live music.',
                     imageURL: 'Pictures/bar.jpeg' 
                 };
-                updateatelierDetails(atelierDetails);
+                updateAtelierDetails(atelierDetails);
 
             } else if (atelier === 'cafe') {
                 const atelierDetails = {
@@ -81,7 +81,7 @@ Numéro D'Étudiant : 300272916
                     description: 'Casual establishment focused on coffee, tea, and pastries, often with a relaxed atmosphere.',
                     imageURL: 'Pictures/cafe.jpeg' 
                 };
-                updateatelierDetails(atelierDetails);
+                updateAtelierDetails(atelierDetails);
 
             } else if (atelier === 'hotel') {
                 const atelierDetails = {
@@ -89,7 +89,7 @@ Numéro D'Étudiant : 300272916
                     description: 'Provides lodging, often with additional amenities like restaurants, bars, and pools.',
                     imageURL: 'Pictures/hotel.jpeg' 
                 };
-                updateatelierDetails(atelierDetails);
+                updateAtelierDetails(atelierDetails);
 
             } else if (atelier === 'theater') {
                 const atelierDetails = {
@@ -97,18 +97,16 @@ Numéro D'Étudiant : 300272916
                     description: 'Venue for live performances, such as plays, musicals, concerts, or stand-up comedy.',
                     imageURL: 'Pictures/theater.jpeg' 
                 };
-                updateatelierDetails(atelierDetails);
-
+                updateAtelierDetails(atelierDetails);
             }
+        }
+    </script>
+
     
+                <!--    FOOTER   -->
     <footer class="container-fluid bg-orange text-white py-3 text-center">
         <p>&copy; 2024 Passport to Flavor</p>
     </footer>
 
-    }
-
-    </script>
-
 </body>
 </html>
-
