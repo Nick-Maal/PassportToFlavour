@@ -107,7 +107,7 @@ section:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-                /* Experts Section */
+                /* Chefs */
 #chefs {
     background-color: #ffffff;  
 }
@@ -131,6 +131,12 @@ section:hover {
 
 .expert-card:hover {
     transform: scale(1.05);
+}
+
+.chef-img {
+    width: 100%;
+    height: 400px; 
+    object-fit: auto;
 }
 
                 /* Services Section */
@@ -185,6 +191,12 @@ section:hover {
 
 .ateliers-card:hover {
     transform: scale(1.05);
+}
+
+.atelier-img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
 }
 
 
