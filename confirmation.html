@@ -9,19 +9,22 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+
+            <!--  Header  -->
     <header class="container-fluid bg-orange text-white py-3">
         <h1 class="text-center display-4">Passport to Flavor</h1> 
         <p class="text-center lead">Crafting Culinary Adventures for Your Special Events</p>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-orange">
+
+            <!--  NavBar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-red">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Passport to Flavor</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About Us</a>
                     </li>
@@ -29,7 +32,7 @@
                         <a class="nav-link" href="#food">Our Food</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#chefs">Our Chefs</a>
+                        <a class="nav-link" href="#chefs">Our chefs</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Our Services</a>
@@ -42,20 +45,22 @@
         </div>
     </nav>
 
+
     <main class="container py-5">
         <h2>Booking Confirmation</h2>
         <div id="confirmation-details" class="mt-4">
-            <!-- Confirmation details will be inserted here by JavaScript -->
         </div>
         <button class="btn btn-primary mt-3" onclick="window.print()">Print Confirmation</button>
     </main>
 
+            <!--  Footer  -->
     <footer class="container-fluid bg-orange text-white py-3 text-center">
         <p>&copy; 2024 Passport to Flavor</p>
     </footer>
 
+
     <script>
-        // Function to get URL parameters
+
         function getQueryParams() {
             const params = new URLSearchParams(window.location.search);
             const chef = params.get('chef');
@@ -70,7 +75,7 @@
             return { chef, service, date, time, name, email, location, people, menu };
         }
 
-        // Function to display confirmation details
+
         function displayConfirmation() {
             const { chef, service, date, time, name, email, location, people, menu } = getQueryParams();
             const confirmationDetails = document.getElementById('confirmation-details');
@@ -124,8 +129,8 @@
             `;
         }
 
-        // Call the function to display confirmation details
         document.addEventListener('DOMContentLoaded', displayConfirmation);
+
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
